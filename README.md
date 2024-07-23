@@ -40,3 +40,13 @@ sudo cp -rTv QCA9377/ /lib/firmware/ath10k/QCA9377
 
 sudo rm -fv /lib/firmware/ath10k/QCA9377/hw1.0/firmware-6.bin
 ```
+
+## Applying the changes
+
+Reboot host or try to reload the kernel module:
+
+```SHELL
+modprobe -r ath10k_pci
+
+modprobe ath10k_pci
+```
